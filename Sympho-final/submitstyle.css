@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+*{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body, * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #00d9ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    -webkit-touch-callout: none;
+}
+
+.glow-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 10%, transparent 10.01%);
+    background-size: 40px 40px;
+    z-index: -1;
+}
+
+.submission-container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    width: 50%;
+    border-radius: 15px;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.8);
+    text-align: center;
+}
+
+#countdown {
+    font-size: 48px;
+    text-shadow: 0 0 15px #00d9ff;
+    padding: 10px;
+    border: 2px solid #00d9ff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.submission-container h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #00d9ff;
+}
+
+.submission-container p {
+    font-size: 24px;
+    font-style: italic;
+    color: #00b8e6;
+    margin-top: 20px;
+    text-shadow: 0 0 8px #00b8e6;
+}
+
+#redirect-message {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 8px #00d9ff;
+    margin-bottom: 20px;
+}
+
+#submit-btn {
+    padding: 15px 25px;
+    background: #002244;
+    color: #00d9ff;
+    border: 2px solid #00d9ff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+#submit-btn:hover {
+    background: #004466;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00d9ff;
+}
